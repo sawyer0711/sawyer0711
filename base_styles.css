@@ -1,0 +1,130 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 조선일보명조체 웹폰트 추가 */
+@font-face {
+    font-family: 'Chosun';
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/ChosunilboMyeongjo/ChosunilboMyeongjo.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/ChosunilboMyeongjo/ChosunilboMyeongjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 프리텐다드 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css');
+
+/* 윤바탕 */
+@font-face {
+    font-family: 'YunBatang';
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/YunBatang/YunBatang.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/YunBatang/YunBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 윤고딕 */
+@font-face {
+    font-family: 'YunGothic';
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/YunGothic/YunGothic.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/YunGothic/YunGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 코펍 바탕 */
+@font-face {
+    font-family: 'KoPubBatang';
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubBatang/KoPubBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 코펍 돋움 */
+@font-face {
+    font-family: 'KoPubDotum';
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubDotum/KoPubDotum.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/KoPubDotum/KoPubDotum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Chosun', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    min-width: 1240px;
+    overflow-x: auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-width: 1200px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+/* 전체 페이지 레이아웃 조정 */
+.page-wrapper {
+    position: relative;
+}
+
+/* 사이트 콘텐츠 위치 고정 */
+.site-content {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature-item {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.feature-item:nth-child(1) { animation-delay: 0.1s; }
+.feature-item:nth-child(2) { animation-delay: 0.2s; }
+.feature-item:nth-child(3) { animation-delay: 0.3s; }
+.feature-item:nth-child(4) { animation-delay: 0.4s; }
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }

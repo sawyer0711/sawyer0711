@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="사유하는 법학적성시험 - 입시정보">
+    <title>입시정보 - 사유하는 법학적성시험</title>
+    
+    <!-- 파비콘 -->
+    <link rel="icon" href="../components/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- 로고 섹션 -->
+        <div class="logo-section">
+            <div class="container">
+                <div class="logo-wrapper">
+                    <a href="../index.html">
+                        <img src="../components/logo.png" alt="사유하는 법학적성시험" class="site-logo-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 헤더 -->
+        <header class="site-header">
+            <div class="container">
+                <div class="header-inner">
+                    <button class="all-menu-toggle">전체보기</button>
+                    <nav class="main-navigation">
+                        <ul class="menu">
+                            <li class="has-submenu">
+                                <a href="../introduce/index.html">소개</a>
+                                <ul class="submenu">
+                                    <li><a href="introduce/index.html#about-teachers">선생님 소개</a></li>
+                                    <li><a href="../introduce/index.html">캠퍼스 소개</a></li>
+                                    <li><a href="introduce/index.html#about-teachers">교육 운영 체계</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#sosik">소식</a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#program">프로그램</a>
+                                <ul class="submenu">
+                                    <li><a href="#program-regular">리트 프랩</a></li>
+                                    <li><a href="#program-intensive">리트</a></li>
+                                    <li><a href="#program-online">포스트 리트</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="../information/index.html">입시정보</a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#review">수강후기</a>
+                                <ul class="submenu">
+                                    <li><a href="#review-success">수강 후기</a></li>
+                                    <li><a href="#review-course">성적 표본</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#contact">수강문의</a>
+                                <ul class="submenu">
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#contact">교재구매</a>
+                                <ul class="submenu">
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 전체 메뉴 -->
+            <div class="all-menu-container">
+                <div class="all-menu-grid">
+                    <div class="all-menu-column">
+                        <h4>소개</h4>
+                        <ul>
+                            <li><a href="../introduce/index.html#about-philosophy">교육 철학</a></li>
+                            <li><a href="../introduce/index.html#about-teachers">강사진 소개</a></li>
+                            <li><a href="../introduce/index.html#about-system">학습 시스템</a></li>
+                        </ul>
+                    </div>
+                    <div class="all-menu-column">
+                        <h4>프로그램</h4>
+                        <ul>
+                            <li><a href="#program-regular">정규 과정</a></li>
+                            <li><a href="#program-intensive">집중 과정</a></li>
+                            <li><a href="#program-online">온라인 과정</a></li>
+                            <li><a href="#program-mock">모의고사</a></li>
+                        </ul>
+                    </div>
+                    <div class="all-menu-column">
+                        <h4>수강후기</h4>
+                        <ul>
+                            <li><a href="#review-success">합격 수기</a></li>
+                            <li><a href="#review-course">수강 후기</a></li>
+                            <li><a href="#review-score">성적 향상 사례</a></li>
+                        </ul>
+                    </div>
+                    <div class="all-menu-column">
+                        <h4>문의</h4>
+                        <ul>
+                            <li><a href="#contact-consult">상담 신청</a></li>
+                            <li><a href="#contact-visit">방문 예약</a></li>
+                            <li><a href="#contact-faq">자주 묻는 질문</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 메인 콘텐츠 -->
+        <main class="site-content">
+            <!-- 페이지 헤더 -->
+            <section class="page-header">
+                <div class="container">
+                    <h1 class="page-title">입시정보</h1>
+                    <p class="page-subtitle">법학전문대학원 입시에 필요한 모든 정보를 제공합니다</p>
+                </div>
+            </section>
+
+            <!-- 유튜브 섹션 -->
+            <section class="youtube-section">
+                <div class="container">
+                    <h2 class="section-title">Latest Youtube Contents</h2>
+                    <p class="section-subtitle">우리 원의 최신 유튜브 영상을 확인하세요</p>
+                    
+                    <div class="youtube-carousel">
+                        <div class="youtube-videos" id="youtube-videos">
+                            <div class="loading-spinner">영상을 불러오는 중...</div>
+                        </div>
+                        <button class="youtube-nav youtube-prev" onclick="moveCarousel(-1)">‹</button>
+                        <button class="youtube-nav youtube-next" onclick="moveCarousel(1)">›</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 푸터 -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logos">
+                        <img src="../components/logo1.png" alt="로기카데미아" class="footer-logo">
+                        <img src="../components/logo2.png" alt="사유하는 법학적성시험" class="footer-logo">
+                    </div>
+                    <div class="footer-info">
+                        <p style="font-family: 'YunBatang', serif;">로기카데미아 유한회사 | 사업자등록번호 : 405-87-03111</p>
+                        <p style="font-family: 'YunBatang', serif;">소재지 : 서울특별시 관악구 남부순환로 1956 2층 | E-mail : help@logicademia.com</p>
+                        <p style="font-family: 'YunGothic', sans-serif;">COPYRIGHT © 로기카데미아 유한회사 ALL RIGHT RESERVED. 2023-2025</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

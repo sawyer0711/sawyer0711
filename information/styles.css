@@ -1,0 +1,658 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 조선일보명조체 웹폰트 추가 */
+@font-face {
+    font-family: 'Chosun';
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/ChosunilboMyeongjo/ChosunilboMyeongjo.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/ChosunilboMyeongjo/ChosunilboMyeongjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 프리텐다드 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css');
+
+/* 윤바탕 */
+@font-face {
+    font-family: 'YunBatang';
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/YunBatang/YunBatang.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/YunBatang/YunBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 윤고딕 */
+@font-face {
+    font-family: 'YunGothic';
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/YunGothic/YunGothic.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/YunGothic/YunGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Chosun', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+/* 전체 페이지 레이아웃 조정 */
+.page-wrapper {
+    position: relative;
+}
+
+/* Logo Section */
+.logo-section {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    z-index: 1001;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-logo-img {
+    max-height: 50px;
+    width: auto;
+    display: block;
+}
+
+/* Header Styles - 중앙 정렬 수정 */
+.site-header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+
+.all-menu-toggle {
+    font-family: 'Chosun', serif;
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 0.9rem;
+    padding: 1.5rem 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.all-menu-toggle:hover {
+    background: #f8f9fa;
+}
+
+.main-navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.main-navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation > ul > li {
+    position: relative;
+}
+
+.main-navigation a {
+    display: block;
+    color: #333;
+    font-weight: 500;
+    padding: 1.5rem 1.2rem;
+    position: relative;
+    transition: color 0.3s;
+    white-space: nowrap;
+}
+
+.main-navigation > ul > li > a:hover {
+    color: #0066cc;
+}
+
+.main-navigation a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #0066cc;
+    transition: width 0.3s ease;
+}
+
+.main-navigation a:hover::after {
+    width: 100%;
+}
+
+/* 서브메뉴 스타일 */
+.has-submenu {
+    position: relative;
+}
+
+.submenu,
+.submenu ul,
+.submenu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.has-submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%);
+}
+
+.submenu li {
+    border-bottom: 1px solid #eee;
+    display: block;
+    width: 100%;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu li:first-child,
+.submenu li:last-child {
+    height: 44px;
+}
+
+.submenu li:first-child a,
+.submenu li:last-child a {
+    height: 44px;
+    padding: 12px 1.5rem;
+}
+
+.submenu a {
+    padding: 12px 1.5rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    line-height: 1;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.submenu a:hover {
+    background: #f8f9fa;
+    color: #0066cc;
+}
+
+/* 전체 메뉴 컨테이너 */
+.all-menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.all-menu-container.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.all-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+}
+
+.all-menu-column h4 {
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.all-menu-column ul {
+    list-style: none;
+}
+
+.all-menu-column a {
+    display: block;
+    padding: 0.5rem 0;
+    color: #666;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.all-menu-column a:hover {
+    color: #0066cc;
+}
+
+/* 사이트 콘텐츠 위치 고정 */
+.site-content {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+/* 전체 메뉴 오픈 시 컨텐츠 밀어내기 */
+.page-wrapper.menu-open .site-content {
+    transform: translateY(300px);
+}
+
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    flex-shrink: 0;
+}
+
+.mobile-menu-toggle span {
+    width: 100%;
+    height: 3px;
+    background: #333;
+    transition: all 0.3s ease;
+}
+
+/* 페이지 헤더 */
+.page-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* 유튜브 섹션 */
+.youtube-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+/* 영문 부분 스타일링 */
+.section-title::first-line {
+    color: #C3A843;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 4rem;
+}
+
+.youtube-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 0 60px;
+}
+
+.youtube-videos {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.youtube-video-item {
+    min-width: 300px;
+    margin-right: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.youtube-video-item:hover {
+    transform: translateY(-5px);
+}
+
+.youtube-thumbnail {
+    width: 100%;
+    height: 169px;
+    object-fit: cover;
+}
+
+.youtube-video-info {
+    padding: 12px 16px;
+}
+
+.youtube-video-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.3rem;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.youtube-video-date {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0;
+}
+
+.youtube-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.youtube-nav:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.youtube-prev {
+    left: 10px;
+}
+
+.youtube-next {
+    right: 10px;
+}
+
+.loading-spinner {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+
+/* Footer */
+.site-footer {
+    background: #666;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    margin-left: 4rem;
+}
+
+.footer-logos {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-shrink: 0;
+    position: relative;
+}
+
+/* 첫 번째 로고 */
+.footer-logo:first-child {
+    margin-right: 2rem;
+}
+
+/* 두 번째 로고 */
+.footer-logo:last-child {
+    margin-left: 1rem;
+}
+
+.footer-logo {
+    height: 40px;
+    width: auto;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover {
+    opacity: 1;
+}
+
+/* 로고 사이 구분선 */
+.footer-logos::after {
+    content: '';
+    position: absolute;
+    left: calc(50% + 0.4rem);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.75px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.footer-info {
+    flex: 1;
+    max-width: 600px;
+}
+
+.footer-info p {
+    margin-bottom: 0.3rem;
+    opacity: 0.9;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: right;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+.footer-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-wrapper.menu-open .site-content {
+        transform: translateY(500px);
+    }
+
+    .main-navigation {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    .main-navigation.active {
+        display: block;
+    }
+
+    .main-navigation ul {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0;
+    }
+    
+    .main-navigation > ul > li {
+        border-bottom: 1px solid #eee;
+    }
+
+    .main-navigation a {
+        display: block;
+        padding: 1rem 0;
+    }
+    
+    .submenu {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+        box-shadow: none;
+        background: #f8f9fa;
+        margin: 0.5rem 0;
+    }
+    
+    .submenu a {
+        padding-left: 2rem;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .all-menu-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+
+    .youtube-carousel {
+        padding: 0 50px;
+    }
+
+    /* 푸터 모바일 반응형 */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        margin-left: 0;
+    }
+    
+    .footer-logos {
+        justify-content: center;
+    }
+    
+    .footer-info {
+        text-align: center;
+        max-width: none;
+    }
+    
+    .footer-info p {
+        text-align: center;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }

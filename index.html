@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="사유하는 법학적성시험 - LEET 전문 학원">
+    <title>사유하는 법학적성시험</title>
+    
+    <!-- 파비콘 -->
+    <link rel="icon" href="components/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="base_styles.css">
+    <link rel="stylesheet" href="header_section.css">
+    <link rel="stylesheet" href="slider_section.css">
+    <link rel="stylesheet" href="highend_section.css">
+    <link rel="stylesheet" href="solution_section.css">
+    <link rel="stylesheet" href="method_section.css">
+    <link rel="stylesheet" href="ed_section.css">
+    <link rel="stylesheet" href="contract_section.css">
+    <link rel="stylesheet" href="footer_section.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- 로고 섹션 -->
+        <div class="logo-section">
+            <div class="container">
+                <div class="logo-wrapper">
+                    <a href="./index.html">
+                        <img src="components/logo.png" alt="사유하는 법학적성시험" class="site-logo-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 헤더 -->
+        <header class="site-header">
+            <div class="container">
+                <div class="header-inner">
+                    <nav class="main-navigation">
+                        <ul class="menu">
+                            <li class="has-submenu current-menu">
+                                <a href="./error/index.html">소개</a>
+                            </li>
+                            <li class="has-submenu current-menu">
+                                <a href="./error/index.html">소식</a>
+                            </li>
+                            <li class="has-submenu current-menu">
+                                <a href="./programs/index.html">프로그램</a>
+                            </li>
+                            <li class="has-submenu current-menu">
+                                <a href="./error/index.html">입시정보</a>
+                            </li>
+                            <li class="has-submenu current-menu">
+                                <a href="./error/index.html">수강후기</a>
+                            </li>
+                            <li class="has-submenu current-menu">
+                                <a href="./error/index.htmlt">수강문의</a>
+                            </li>
+                            <li class="has-submenu current-menu">
+                                <a href="./error/index.html">교재구매</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <nav class="breadcrumb-nav">
+            <div class="container">
+                <ul class="breadcrumb-list">
+                    <!-- JavaScript가 자동으로 생성합니다 -->
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 메인 콘텐츠 -->
+        <main class="site-content">
+            <!-- 슬라이드 섹션 -->
+            <section class="slider-section">
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <!-- 슬라이드 1 -->
+                        <div class="slide active">
+                            <div class="slide-content">
+                                <h2 class="slide-title">개별 집중 관리</h2>
+                                <p class="slide-description">사유하는 법학적성시험에서는 매주 선생님과 1:1 상담을 진행하여 풀이법에 대한 피드백과 학습 방향성에 대한 조언을 제공합니다.</p>
+                            </div>
+                        </div>
+                        <!-- 슬라이드 2 -->
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h2 class="slide-title">압도적인 학습량 + 수준별 과제</h2>
+                                <p class="slide-description">매주 1회씩, 총 26회의 사설모의고사, 총 1,820개 문항을 풀이합니다. 각각의 모의고사에는 별도의 과제가 병행됩니다. 선생님이 직접 학생의 수준을 파악하고, 과제 수행 내용을 분석하여 맞춤형 학습에 따른 과제 부과가 진행됩니다.</p>
+                            </div>
+                        </div>
+                        <!-- 슬라이드 3 -->
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h2 class="slide-title">객관적 데이터 기반 피드백</h2>
+                                <p class="slide-description">사유하는 법학적성시험은 데이터 LMS인 부츠캣 시스템을 개발 및 사용하고 있습니다. 학생들에게 성적 판단의 근거가 되어주는 데이터를 이용하여 객관적인 과학적 근거를 통한 분석과 피드백을 제공합니다.</p>
+                            </div>
+                        </div>
+                        <!-- 슬라이드 4 -->
+                        <div class="slide">
+                            <div class="slide-content">
+                                <h2 class="slide-title">성과 공개 제도</h2>
+                                <p class="slide-description">인터넷 강의 위주의 학원들과 다르게 학생 관리를 위한 현장 강의를 지향하며, 매 년마다 수강생 수와 성적 공개를 통해 성과를 투명하게 공개하고 있습니다. 사유하는 법학적성시험은 성과 공개를 통해 학생들의 성적에 책임을 다하고 있습니다. 저희가 이뤄온 성과들은 페이지 내에서 확인하실 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 슬라이드 네비게이션 -->
+                    <div class="slider-nav">
+                        <button class="slider-prev" onclick="changeSlide(-1)">‹</button>
+                        <button class="slider-next" onclick="changeSlide(1)">›</button>
+                    </div>
+                    <!-- 슬라이드 인디케이터 -->
+                    <div class="slider-dots">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 하이엔드 섹션 -->
+            <section class="highend-section">
+                <div class="container">
+                    <h2 class="section-title">High-end</h2>
+                    <p class="section-subtitle">하이엔드 - '목표는 같아도, 방법은 다릅니다.'</p>
+                    
+                    <!-- 첫 번째 행: 이미지(좌) + 텍스트(우) -->
+                    <div class="highend-row-1">
+                        <div class="highend-image-1">
+                            <div class="image-box image-box-1">
+                            </div>
+                        </div>
+                        <div class="highend-text-1">
+                            <h3>꿈에는 가성비를 따질 수 없습니다</h3>
+                            <p style="font-size: 14px;">물론 인강, 독학으로도 로스쿨 입시를 준비할 수 있습니다.<br>본인의 실력이 충분하고, 시간도 많다면요.</p>
+                            <p style="font-size: 14px;">하지만 단 한 번에 모든 것을 쏟아붓고 싶은 학생<br>지금까지 실수와 실패만 반복한 학생들도 있을 것입니다.</p>
+                            <p style="font-size: 14px;">반드시 성적을 올려야 하는, 그런 학생들을 위해<br>우리는 존재합니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- 두 번째 행: 텍스트(좌) + 이미지(우) -->
+                    <div class="highend-row-2">
+                        <div class="highend-text-2">
+                            <h3>지금 당신이 서 있는 곳은 안전지대입니까</h3>
+                            <p style="font-size: 14px;">로스쿨 입시는 약 20,000명 중 2,000등 안에 들어야 합니다.<br>남들보다 더 앞서나가기 위해서는<br>더 효과적인 방법이 필요한 법입니다.</p>
+                            <p style="font-size: 14px;">의미없이 인터넷 강의만 계속 듣고,<br>기출문제를 외울 정도로 반복적으로 보는 것만으로는<br>20,000명 중 2,000등에 들기도 어려울 뿐더러<br>성적도 올리기 어렵습니다.</p>
+                            <p style="font-size: 14px;">우리 원은 2020년부터 솔루션식 수업의 정체성을 지켜왔습니다.<br>우리는 효과적인 방법들을 탐구하고 현장에 적용하고 있습니다.</p>
+                        </div>
+                        <div class="highend-image-2">
+                            <div class="image-box image-box-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 솔루션 섹션 -->
+            <section class="solution-section">
+                <div class="container">
+                    <h2 class="section-title">Solution</h2>
+                    <p class="section-subtitle">솔루션 - '우리는 의미있는 교육을 합니다.'</p>
+                    <div class="solution-boxes">
+                        <div class="solution-box box-1" style="font-family: 'YunGothic', sans-serif; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; text-align: left;">
+                            <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+                            <source src="components/background1.mp4" type="video/mp4">
+                            </video>
+                            <h3>리트 100점 미만도, 예체능도, 저학벌도 진입 가능</h3>
+                            <p style="font-size: 14px;">우리 원의 선생님 전원은<br>백오피스를 거친 솔루션 강사 출신입니다.</p>
+                            <p style="font-size: 14px;"> 매주 1:1 상담 진행과 솔루션 병행으로<br> 확실하게 기본기와 실력을 잡아냅니다.</p>                              
+                            <p style="font-size: 14px;">우리는 많은 저리트, 저정량, 저학벌<br>합격 사례가 있습니다.</p>
+                        </div>
+
+                        <div class="solution-box box-2" style="font-family: 'YunGothic', sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                            <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+                            <source src="components/background2.mp4" type="video/mp4">
+                            </video>
+                            <h3>'나'의 풀이법 형성</h3>
+                            <p style="font-size: 14px;">강사가 혼자 문제푸는 것을 구경하는 것은<br>공부가 아닙니다.</p>
+                            <p style="font-size: 14px;"> 내가 입시 때 이랬더니 성적이 오르더라 하는<br> 일방향적인 풀이법과 사후적인 해석이 아니라,</p>
+                            <p style="font-size: 14px;">메타인지를 통해 스스로의 풀이법을<br>형성하도록 직접 도와줍니다.</p>
+                        </div>
+
+                        <div class="solution-box box-3" style="font-family: 'YunGothic', sans-serif; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; text-align: right;">
+                            <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+                            <source src="components/background3.mp4" type="video/mp4">
+                            </video>
+                            <h3>개별 피드백 전문</h3>
+                            <p style="font-size: 14px;">문제는 누구나 풀어주고 해설할 수 있습니다.<br>하지만 '내 문제'는 쉽게 해결되지 않습니다.</p>
+                            <p style="font-size: 14px;">우리는 많은 상담, 솔루션 경험으로<br>문제가 아닌, 학생에 대한 경험이 많습니다.</p>                              
+                            <p style="font-size: 14px;">과다추론, 저추론, 기본기 부족 등<br>다양한 해결 사례와 참고 사례가 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 메소드 섹션 -->
+            <section class="method-section">
+                <div class="container">
+                    <h2 class="section-title">Method</h2>
+                    <p class="section-subtitle">교육 방법론 - '우리는 이런 방법들을 사용합니다.'</p>
+                    <div class="card-container">
+                    <div class="method-card1">
+                        <div class="method-card-image1">
+                            <img src="components/Method1.png">
+                        </div>
+                        <div class="method-card-text1">
+                            <h3>올라운드</h3>
+                            <p style="font-size: 14px;">&nbsp;리트 준비 - 리트 - 포스트리트까지.</p>
+                            <p style="font-size: 14px;">&nbsp;솔루션과 백오피스 경력을 가진 담임선생님이 모든 과정에서 전체적인 입시 전략을 짭니다.</p>
+                        </div>
+                    </div>
+                    <div class="method-card2">
+                        <div class="method-card-image2">
+                            <img src="components/Method2.png">
+                        </div>
+                        <div class="method-card-text2">
+                            <h3>생활 관리</h3>
+                            <p style="font-size: 14px;">&nbsp;분석 내용 및 강약점을 전담 선생님에게 전달합니다. 그리고 관리앱을 통해 공부량과 학습 진도를 파악합니다.</p>
+                            <p style="font-size: 14px;">&nbsp;이를 바탕으로 전담 선생님이 배치되어 학습을 지도합니다. 원 외에서도 생활과 학업을 관리받을 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="method-card3">
+                        <div class="method-card-image3">
+                            <img src="components/Method3.png">
+                        </div>
+                        <div class="method-card-text3">
+                            <h3>현장 훈련</h3>
+                            <p style="font-size: 14px;">&nbsp;일부 리트 과정의 경우 매주 모의고사 응시가 병행됩니다.</p>
+                            <p style="font-size: 14px;">&nbsp;총 33회, 2310개의 문항을 매주 빠짐없이 풀며 시험의 현장감과 풀이법의 실전성을 연습합니다.</p>
+                            </div>
+                    </div>
+                    <div class="method-card4">
+                        <div class="method-card-image4">
+                            <img src="components/Method4.png">
+                        </div>
+                        <div class="method-card-text4">
+                            <h3>부츠캣 시스템</h3>
+                            <p style="font-size: 14px;">&nbsp;매주 모의고사에 응시하는 과정의 경우 부츠캣을 통해 성적을 추적 및 분석합니다.</p>
+                            <p style="font-size: 14px;">&nbsp;성적의 추이, 오답 유형 분석, 시험지 검증을 통해, 부족한 부분과 개선점을 1:1로 상담합니다.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 교육 철학 세션-->
+            <section class="ed-section">
+                <div class="container">
+                    <h2 class="section-title">ED Philosophy</h2>
+                    <p class="section-subtitle">교육 철학 - '살아있는 지식을 기릅니다..'</p>
+                    <div class="ed-container">
+                        <div class="ed-box1">
+                            <div class="ed-box1-text1">
+                            <h3 style=" color: white;">우리는 불친절합니다.</h3>
+                            <p style="font-size: 14px; color: white;">적성시험은 능동적으로 접근해야 합니다.<br>내 공부를 누군가 대신해줄 수는 없습니다.</p>
+                            <p style="font-size: 14px; color: white;">옆에서 우리가 도와준다고 한들,<br>자신의 지식은 자신이 쌓아나가야 합니다.</p>                              
+                            <p style="font-size: 14px; color: white;">우리는 계속해서 능동성을 원합니다.<br>수강신청부터, 등원, 학습까지.<br>스스로 시도하는 습관 형성을 위해<br>우리는 의도적으로 불친절합니다.</p>
+                            </div>
+                            <div class="ed-box1-text2">
+                            <p style="font-size: 14px; color: white;">검성준 서울 원장<br>서울대학교 입시 설명회</p>
+                            </div>
+                        </div>
+                        <div class="ed-box2">
+                            <div class="ed-box2-text1">
+                            <h3 style=" color: white;">최소한 의지는 있어야 합니다.</h3>
+                            <p style="font-size: 14px; color: white;">성적이 낮다고, 이해를 못한다고 해서<br>퇴원시키지는 않습니다.</p>
+                            <p style="font-size: 14px; color: white;">공부량과 성실함 역시도 학생 개개인에<br>맞추어 상대적으로 평가 및 지도합니다.</p>                              
+                            <p style="font-size: 14px; color: white;">그러나 적응하지 못하는 학생, 발전이 없는 학생,<br>의지가 꺾인 학생은 퇴원시킵니다.<br>최소한의 긴장으로 역량을 집중합니다.</p>
+                            </div>
+                            <div class="ed-box2-text2">
+                            <p style="font-size: 14px; color: white;">한진수 광주 원장<br>조선대학교 입시 설명회</p>
+                            </div>
+                        </div>
+                        <div class="ed-box3">
+                            <div class="ed-box3-text1">
+                            <h3 style=" color: white;">교육의 책임은 결과로 증명됩니다.</h3>
+                            <p style="font-size: 14px; color: white;">우리는 우리의 실력에 자신이 있습니다.<br>'교육 서비스'에서 '서비스'가 아닌,<br>'교육'에 집중해오고 있기 때문입니다.</p>
+                            <p style="font-size: 14px; color: white;">박리다매로 많은 학생을 가르치기 보다는,<br>소수의 학생을 제대로 가르칩니다.</p>                              
+                            <p style="font-size: 14px; color: white;">실력에 자신이 있으니 결과도 공개할 수 있습니다.<br>그래서 수강생의 성적을 매년 투명하게 공개합니다.<br>그리고 그 결과는 항상 우리를 증명합니다.</p>
+                            </div>
+                            <div class="ed-box3-text2">
+                            <p style="font-size: 14px; color: white;">임세빈 부산 원장<br>전남대학교 입시 설명회</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+
+            <!-- 계약 안내 섹션 -->
+            <section class="contract-section">
+                <div class="container">
+                    <h2 class="section-title">Inter-corporate contract information.</h2>
+                    <p class="section-subtitle">로기카데미아 유한회사 & 메가엠디 주식회사 법인 간 계약 안내 사항</p>
+                    <div class="contract-content">
+                        <p>사유하는 법학적성시험(운영사 로기카데미아 유한회사)과 메가로스쿨(운영사 메가엠디 주식회사)은 법인 간 계약을 통해, 수험생 여러분께 보다 폭넓고 전문적인 강의 서비스를 제공하고자 협력하게 되었습니다.</p>
+                        <p>이에 따라, 사유하는 법학적성시험 소속 전속 강사이신 검성준 선생님께서 법학적성시험의 논술, 자기소개서, 면접 과목에 한하여, 온라인 및 오프라인 학원 강의 영역에서 메가로스쿨에 전속적으로 출강하여 포스트리트 과정을 공동운영 하게되었음을 알려드립니다.</p>
+                        <p>포스트리트 공동운영은 우리 시설 소속 다른 캠퍼스와 선생님들에게도 똑같이 효력을 가지므로, 검성준 선생님 포스트리트 강의 및 포스트리트 관련 과목(논술, 자기소개서, 면접) 강의에 대한 수강 신청, 수강료 문의, 강의 내용 문의 등 모든 관련 절차 및 문의는 메가로스쿨 홈페이지를 통해 진행해 주시기 바랍니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 텍스트 섹션 -->
+            <section class="text-section">
+                <div class="container">
+                    <h4 class="section-title" style="font-size: 22px;">단 하나, 최대의 효과</h4>
+                    <h4 class="section-title" style="font-size: 22px;">우리의 지향점은 '고가치, 혁신, 최대효율' 입니다.</h4>
+                </div>
+            </section>
+        </main>
+
+        <!-- 푸터 -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logos">
+                        <img src="components/logo1.png" alt="로기카데미아" class="footer-logo">
+                        <img src="components/logo2.png" alt="사유하는 법학적성시험" class="footer-logo">
+                    </div>
+                    <div class="footer-info">
+                        <p style="font-family: 'YunBatang', serif;">로기카데미아 유한회사 | 사업자등록번호 : 405-87-03111</p>
+                        <p style="font-family: 'YunBatang', serif;">소재지 : 서울특별시 관악구 남부순환로 1956 2층 | E-mail : help@logicademia.com</p>
+                        <p style="font-family: 'YunGothic', sans-serif;">COPYRIGHT © 로기카데미아 유한회사 ALL RIGHT RESERVED. 2023-2025</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

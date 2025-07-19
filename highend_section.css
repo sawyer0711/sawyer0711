@@ -1,0 +1,107 @@
+/* 하이엔드 섹션 */
+
+.highend-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.highend-section .section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.highend-section .section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 4rem;
+}
+
+/* 첫 번째 행: 이미지(좌) + 텍스트(우) */
+.highend-row-1 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highend-image-1 {
+    flex: 3;
+}
+
+.highend-text-1 {
+    text-align: right;
+    flex: 2;
+}
+
+/* 두 번째 행: 텍스트(좌) + 이미지(우) */
+.highend-row-2 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highend-text-2 {
+    text-align: left;
+    flex: 2;
+}
+
+.highend-image-2 {
+    flex: 3;
+}
+
+/* 공통 이미지 박스 스타일 */
+.image-box {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.image-box-1 {
+    background: url('components/he1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-box-2 {
+    background: url('components/he2.png');
+    background-size: cover;
+    background-position: center;
+    filter: contrast(1.1);
+}
+
+/* 공통 텍스트 스타일 */
+.highend-text-1 h3,
+.highend-text-2 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    line-height: 1.3;
+}
+
+.highend-text-1 p,
+.highend-text-2 p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.highend-text-1 p:last-child,
+.highend-text-2 p:last-child {
+    margin-bottom: 0;
+}

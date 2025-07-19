@@ -1,0 +1,46 @@
+/* Contract Section */
+
+.contract-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.section-title::first-line {
+    color: #C3A843;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 4rem;
+}
+
+.contract-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #f8f9fa;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.contract-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.contract-content p:last-child {
+    margin-bottom: 0;
+}
+
+.text-section {
+    margin-bottom: 100px;
+}
